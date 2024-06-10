@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b53xo1hh1q5u8"]
+
+[ext_resource type="Texture2D" uid="uid://dvw8d7n4s208m" path="res://battle_bg.png" id="1_4f6dk"]
+[ext_resource type="PackedScene" uid="uid://2lv0jyhtt515" path="res://enemy_group.tscn" id="1_qp5m0"]
+
+[node name="BattleScene" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 320.0
+offset_bottom = 180.0
+texture = ExtResource("1_4f6dk")
+expand_mode = 1
+
+[node name="EnemyGroup" parent="." instance=ExtResource("1_qp5m0")]
+position = Vector2(42, 35)
