@@ -6,6 +6,7 @@
 [node name="BattleScene" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
+self_modulate = Color(0.611765, 0.611765, 0.611765, 1)
 offset_right = 320.0
 offset_bottom = 180.0
 texture = ExtResource("1_4f6dk")
