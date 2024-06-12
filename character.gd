@@ -1,3 +1,4 @@
+class_name Character
 extends CharacterBody2D
 
 @onready var _focus = $Focus
@@ -26,3 +27,7 @@ func focus():
 
 func unfocus():
 	_focus.hide()
+
+
+func take_damage(value):
+	health -= value
