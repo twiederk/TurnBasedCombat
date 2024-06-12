@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://biyafptgnr86k"]
+
+[ext_resource type="Script" path="res://player_group.gd" id="1_tjmj1"]
+[ext_resource type="PackedScene" uid="uid://b36tffk0fyvjp" path="res://character.tscn" id="2_g7eiy"]
+[ext_resource type="Texture2D" uid="uid://bm2ebnn3tn7fe" path="res://Battlers/World01_001_GreenGoo.png" id="3_fqq01"]
+[ext_resource type="Texture2D" uid="uid://db80dpfjanrm2" path="res://Battlers/World01_002_Salamander.png" id="4_8bqlk"]
+[ext_resource type="Texture2D" uid="uid://xdmy1yqxlqk2" path="res://Battlers/World01_003_Bird.png" id="5_b15q4"]
+[ext_resource type="Texture2D" uid="uid://hr20mas3tc6e" path="res://Battlers/World01_004_WailingPrince.png" id="6_3l6bo"]
+
+[node name="PlayerGroup" type="Node2D"]
+script = ExtResource("1_tjmj1")
+
+[node name="Character" parent="." instance=ExtResource("2_g7eiy")]
+
+[node name="Sprite2D" parent="Character" index="0"]
+texture = ExtResource("3_fqq01")
+
+[node name="Character2" parent="." instance=ExtResource("2_g7eiy")]
+
+[node name="Sprite2D" parent="Character2" index="0"]
+texture = ExtResource("4_8bqlk")
+
+[node name="Character3" parent="." instance=ExtResource("2_g7eiy")]
+
+[node name="Sprite2D" parent="Character3" index="0"]
+texture = ExtResource("5_b15q4")
+
+[node name="Character4" parent="." instance=ExtResource("2_g7eiy")]
+
+[node name="Sprite2D" parent="Character4" index="0"]
+texture = ExtResource("6_3l6bo")
+
+[editable path="Character"]
+[editable path="Character2"]
+[editable path="Character3"]
+[editable path="Character4"]
